@@ -1,0 +1,17 @@
+:root {
+  /* Color styles */
+  --color-black: #1d1f24;
+  --color-pink: #ff565c;
+  --color-white: #ffffff;
+  --color-gray: #f9fafc;
+  --color-gray-e: #ebebeb;
+
+  /* Color Abstract */
+  --color-text: var(--color-black);
+  --color-text-light: var(--color-white);
+  --color-primary: var(--color-pink);
+  --color-bg-light: var(--color-white);
+  --color-bg: var(--color-gray);
+  --color-bg-dark: var(--color-black);
+  --color-border: var(--color-gray-e);
+}
