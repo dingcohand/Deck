@@ -1,0 +1,321 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 2rem 10rem;
+  background-color: var(--color-bg);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  padding: 0 2.5rem;
+  margin-top: 3rem;
+  font-family: var(--font-sub);
+  font-size: 1.4rem;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+}
+
+article {
+  position: relative;
+  overflow: hidden;
+}
+
+.article_content:hover + .article_bg,
+.article_content:focus + .article_bg,
+.article_content:active + .article_bg {
+  transform: scale(1.1);
+}
+
+.article_content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 27.4rem;
+}
+
+.article_title {
+  padding: 0 2.5rem;
+  margin-top: 2.2rem;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.008em;
+}
+
+.article_dl {
+  position: absolute;
+  bottom: 2.1rem;
+  left: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.article_dl div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.article_dl dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.article_dl dd {
+  font-size: 1.3rem;
+  line-height: 2.308;
+  letter-spacing: 0;
+}
+
+.article_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 200ms ease;
+}
+
+.article_bg::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+}
+
+/* Brand */
+
+.brand_content {
+  align-items: center;
+  justify-content: center;
+  height: 44.1rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.brand .badge {
+  margin-top: 0;
+}
+
+.brand_title {
+  margin-top: 2rem;
+  font-family: var(--font-sub);
+  font-size: 2.6rem;
+  line-height: 1.508;
+  letter-spacing: 0.015em;
+}
+
+.brand .article_dl {
+  left: 50%;
+  bottom: 3rem;
+  transform: translateX(-50%);
+}
+
+.brand .article_bg {
+  background-image: url("../../images/green-chameleon-176136.jpg");
+}
+
+/* Stories */
+
+.stories {
+  padding-top: 3.5rem;
+  color: var(--color-text);
+  background-color: var(--color-bg-light);
+  border: 0.1rem solid var(--color-border);
+}
+
+.stories_title {
+  padding-left: 2.75rem;
+  font-family: var(--font-sub);
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.109em;
+  text-transform: uppercase;
+}
+
+.stories_item {
+  border-bottom: 0.1rem solid var(--color-border);
+}
+
+.stories_item:last-child {
+  border-bottom: 0;
+}
+
+.stories_item a {
+  display: flex;
+  width: 100%;
+  padding: 2.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.444;
+  letter-spacing: 0.011em;
+}
+
+.stories_item span {
+  margin-right: 2.6rem;
+  font-family: var(--font-sub);
+  font-weight: 500;
+  letter-spacing: 0;
+  opacity: 0.2;
+}
+
+/* Quality */
+
+.quality .article_bg {
+  background-image: url("../../images/oliur-rahman-123819.jpg");
+}
+
+/* More */
+
+.more {
+  padding: 3.7rem 2.5rem 4rem;
+  background-color: var(--color-primary);
+}
+
+.more_title {
+  font-family: var(--font-sub);
+  font-size: 2.6rem;
+  line-height: 1.538;
+  letter-spacing: -0.014em;
+  text-transform: uppercase;
+}
+
+.more_desc {
+  margin-top: 2.1rem;
+  font-size: 1.8rem;
+  line-height: 1.667;
+  letter-spacing: 0;
+}
+
+.more_link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 21rem;
+  height: 6rem;
+  padding: 0 1.6rem;
+  margin-top: 3rem;
+  font-family: var(--font-sub);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 0.1rem solid var(--color-bg-light);
+  border-bottom-width: 0.2rem;
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+.more_link:hover,
+.more_link:focus,
+.more_link:active {
+  color: var(--color-primary);
+  background-color: var(--color-bg-light);
+}
+
+/* Programs */
+
+.programs_title {
+  width: 27rem;
+}
+
+.programs .article_bg {
+  background-image: url("../../images/igor-son-285029.jpg");
+}
+
+/* TABLET */
+
+@media screen and (min-width: 48rem) {
+  .main {
+    display: grid;
+    grid-template-areas:
+      "brand brand"
+      "stories programs"
+      "stories equipment"
+      "more more"
+      "layouts quality";
+    gap: 1.5rem;
+    padding: 4rem 2rem 12rem;
+  }
+
+  .brand {
+    grid-area: brand;
+  }
+
+  .brand_content {
+    height: 58.1rem;
+  }
+
+  .stories {
+    grid-area: stories;
+  }
+
+  .programs {
+    grid-area: programs;
+  }
+
+  .more {
+    grid-area: more;
+  }
+
+  /* Equipment */
+  .equipment {
+    grid-area: equipment;
+  }
+
+  .equipment_content {
+    height: 33.6rem;
+  }
+
+  .equipment .article_bg {
+    background-image: url("../../images/crew-22235.jpg");
+  }
+
+  /* Layouts */
+  .layouts {
+    grid-area: layouts;
+  }
+
+  .layouts .article_bg {
+    background-image: url("../../images/dose-media-344938.jpg");
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 75rem) {
+  .main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 27.4rem);
+    grid-template-areas:
+      "brand brand brand quality"
+      "brand brand brand more"
+      "stories equipment equipment more"
+      "stories programs search layouts";
+    gap: 3.2rem;
+  }
+
+  .brand_content {
+    height: 100%;
+  }
+
+  .equipment_content {
+    height: 100%;
+  }
+
+  /* Search */
+  .search .article_bg {
+    background-image: url("../../images/oliur-rahman-272875.jpg");
+  }
+}
