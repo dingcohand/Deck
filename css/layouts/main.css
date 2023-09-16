@@ -117,6 +117,7 @@ article {
   font-size: 2.6rem;
   line-height: 1.508;
   letter-spacing: 0.015em;
+  text-transform: uppercase;
 }
 
 .brand .article_dl {
@@ -263,6 +264,20 @@ article {
     height: 58.1rem;
   }
 
+  .brand_title {
+    width: 42.8rem;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .brand_desc {
+    width: 48.3rem;
+    font-size: 1.8rem;
+    line-height: 1.444;
+    letter-spacing: 0;
+    opacity: 0.7;
+  }
+
   .stories {
     grid-area: stories;
   }
@@ -314,6 +329,10 @@ article {
 
   .brand_content {
     height: 100%;
+  }
+
+  .brand_title {
+    width: 59.3rem;
   }
 
   .equipment_content {
