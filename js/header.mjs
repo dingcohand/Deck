@@ -18,3 +18,8 @@ function toggleSmMenu() {
   btnMenu.classList.toggle("active");
   overlay.classList.toggle("show");
 }
+
+window.addEventListener("resize", () => {
+  btnMenu.classList.remove("active");
+  overlay.classList.remove("show");
+});
