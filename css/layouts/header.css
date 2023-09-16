@@ -92,10 +92,6 @@
   border-bottom: 0.1rem solid var(--color-border);
 }
 
-.sm_item:active a {
-  opacity: 1;
-}
-
 .sm_item a {
   display: block;
   width: 100%;
@@ -104,10 +100,16 @@
   opacity: 0.2;
 }
 
+.sm_item a:focus,
+.sm_item a:active {
+  opacity: 1;
+}
+
 .sm_list,
 .header_list {
   font-family: var(--font-sub);
   font-size: 1.4rem;
+  color: var(--color-text);
   text-transform: uppercase;
 }
 
@@ -139,10 +141,6 @@
     height: 100%;
   }
 
-  .header_item:hover a {
-    opacity: 1;
-  }
-
   .header_item a {
     display: flex;
     align-items: center;
@@ -150,5 +148,10 @@
     height: 100%;
     opacity: 0.2;
     padding: 0 var(--item-padding);
+  }
+
+  .header_item a:hover,
+  .header_item a:focus {
+    opacity: 1;
   }
 }
