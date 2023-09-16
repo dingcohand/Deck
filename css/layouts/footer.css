@@ -101,6 +101,12 @@
   padding: var(--item-padding);
 }
 
+.link_item a:hover,
+.link_item a:focus,
+.link_item a:active {
+  opacity: 0.5;
+}
+
 .link_item img {
   width: 100%;
   height: 100%;
@@ -121,6 +127,12 @@
 
 .footer_item {
   flex-basis: 50%;
+}
+
+.footer_item a:hover,
+.footer_item a:focus,
+.footer_item a:active {
+  opacity: 0.5;
 }
 
 .footer_item:first-child {
