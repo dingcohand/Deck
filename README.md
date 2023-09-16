@@ -16,21 +16,21 @@
           <th>데스크탑</th>
         </tr>
         <tr>
-          <td style="vertical-align: top">
+          <td valign="top">
             <img
               width="600px"
               src="https://github.com/dingcohand/Deck/assets/144103700/47e5b3b5-c5e0-4538-a483-e26f1551da47"
               alt="모바일 화면"
             />
           </td>
-          <td style="vertical-align: top">
+          <td valign="top">
             <img
               width="600px"
               src="https://github.com/dingcohand/Deck/assets/144103700/7d58b0b1-3d15-4ef3-bdc7-8c4487867e8a"
               alt="태블릿 화면"
             />
           </td>
-          <td style="vertical-align: top">
+          <td valign="top">
             <img
               width="600px"
               src="https://github.com/dingcohand/Deck/assets/144103700/756a632b-1978-4fa3-bfd0-dfe1cad78db8"
